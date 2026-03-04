@@ -16,6 +16,11 @@ function App() {
         <p className="hero__subtitle">输入你的备选菜单，让转盘来做决定。</p>
       </header>
 
+      <section className="result-card" aria-live="polite">
+        <span>抽取结果</span>
+        <strong>{result}</strong>
+      </section>
+
       <section className="content-grid">
         <LunchWheel
           entries={entries}
@@ -31,11 +36,6 @@ function App() {
           onResetEntries={resetEntries}
           disabled={spinning}
         />
-      </section>
-
-      <section className="result-card" aria-live="polite">
-        <span>抽取结果</span>
-        <strong>{result}</strong>
       </section>
     </main>
   );
