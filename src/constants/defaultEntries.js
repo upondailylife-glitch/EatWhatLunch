@@ -6,6 +6,7 @@ export const DEFAULT_ENTRIES = [
   '饺子',
   '大米先生',
   '猪脚饭',
+  '乌鸡米线'
 ];
 
 export const STORAGE_KEY = 'eat-what-lunch.entries.v1';
